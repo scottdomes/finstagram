@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <title>My first page</title>
+       <style>
+           header {
+               positon: relative;
+               padding: 10px 40%;
+           }
+           header img {
+               float: left;
+               margin: -40px;
+           }
+           header a {
+               height: 40px;
+               line-height: 80px;
+               margin: 0 10px;
+               text-decoration: none;
+               color: grey;
+               text-transform: uppercase;
+               font-family: "proxima-nova";
+               border-right: 1px solid grey;
+               padding-right: 20px;
+           }
+           header a#last {
+               border-right: none;
+           }
+           header button {
+               position: absolute;
+               top: 0;
+               right: 5px;
+               background-color: blue;
+               color: white;
+               border: none;
+               padding: 20px;
+               margin-top: 15px;
+           }
+           header button:hover {
+               background-color: lightblue;
+               cursor: pointer;
+           }
+           section {
+               width: 100%;
+           }
+           video {
+               width: 80%;
+               margin: 10px 10%;
+           }
+       </style>
+    </head>
+    <body>
+        <header>
+            <img width="200px" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cache-ak0.pinimg.com%2F736x%2F5a%2F4e%2F08%2F5a4e08fe338c6b5be1e9353c63b5d6bd.jpg&f=1">
+            <a href="http://google.ca">Programs</a>
+            <a href="http://lighthouselabs.ca">Locations</a>
+            <a href="/">Students</a>
+            <a id="last" href="/">About Us</a>
+            <button>APPLY</button>
+        </header>
+        <section>
+            <video autoplay class="header-video__media"><source src="https://www.lighthouselabs.ca/assets/videos/lighthouse-labs-website-video-3abb13ebfe6f8a184842c0879c9ce8d56a6cdfef518fbbcd730397ce45482dbf.mp4"></video>
+        </section>
+    </body>
+</html>
