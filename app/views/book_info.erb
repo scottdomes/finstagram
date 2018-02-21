@@ -1,0 +1,7 @@
+<section>
+  <a href="/books/<%= book.id %>"><h2><%= book.title %></h2></a>
+  <% if show_author %>
+    <%= erb(:author_credit, { locals: { author_name: book.author.full_name } }) %>
+  <% end %>
+  <p>ISBN: <%= book.id %></p>
+</section>

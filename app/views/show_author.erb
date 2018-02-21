@@ -1,0 +1,6 @@
+<div>
+  <h2><%= @author.full_name %></h2>
+  <% @author.books.each do |book| %>
+    <%= erb(:book_info, { locals: { book: book, show_author: false }}) %>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+<h1>Index</h1>
+<% if is_logged_in? %>
+  <% @books.each do |book| %>
+    <%= erb(:book_info, { locals: { book: book, show_author: true }}) %>
+  <% end %>
+  <a href="/logout">Logout</a>
+<% else %>
+  <a href="/login">Go login, please.</a>
+<% end %>
